@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANG NANG 10 - เทศกาลภาพยนตร์</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d0d0d; /* พื้นหลังสีดำ */
+            color: #eee; /* ตัวอักษรสีขาวเทา */
+            font-family: 'Sarabun', sans-serif;
+        }
+        .movie-card {
+            background-color: #1a1a1a; /* สีพื้นหลังของการ์ดหนัง */
+            border: 1px solid #333; /* ขอบสีเทาเข้ม */
+            transition: all 0.3s ease; /* เอฟเฟกต์เวลาเอาเมาส์ไปวาง */
+        }
+        .movie-card:hover {
+            border-color: #D4AF37; /* เปลี่ยนสีขอบเป็นสีทองเวลาเมาส์วาง */
+            transform: translateY(-5px); /* เลื่อนขึ้นเล็กน้อย */
+        }
+    </style>
+</head>
+<body class="pb-20">
+
+    <header class="py-10 text-center border-b border-gray-800 bg-black">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2 text-[#D4AF37]">WANG NANG 10</h1>
+        <p class="text-xl text-gray-400 font-light">เทศกาลภาพยนตร์นิสิต ครั้งที่ 10</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 mt-12">
+        <h2 class="text-2xl font-bold mb-8 text-white border-l-4 border-[#8F0C0C] pl-4">รายการภาพยนตร์ทั้งหมด (16 เรื่อง)</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="movie-card rounded-xl overflow-hidden shadow-lg">
+                <img src="poster1.jpg" alt="Poster 1" class="w-full h-[400px] object-cover bg-gray-900">
+                <div class="p-5 space-y-3">
+                    <h3 class="text-xl font-bold text-[#D4AF37] truncate">ชื่องาน/ชื่อเรื่องที่ 1</h3>
+                    <p class="text-xs text-gray-500 uppercase font-bold italic">จาก โปรดักชั่น A | ความยาว 15 นาที</p>
+                    <p class="text-sm text-gray-400 leading-relaxed line-clamp-3">เรื่องย่อโดยย่อของภาพยนตร์เรื่องที่ 1 จะแสดงตรงนี้ประมาณ 3 บรรทัด เพื่อให้การ์ดมีขนาดเท่ากัน...</p>
+                    <button class="w-full bg-[#D4AF37] text-black py-2 rounded-lg text-sm font-bold hover:bg-[#f1c40f]">ดูรายละเอียด/จองตั๋ว</button>
+                </div>
+            </div>
+            <div class="movie-card rounded-xl overflow-hidden shadow-lg">
+                <img src="poster2.jpg" alt="Poster 2" class="w-full h-[400px] object-cover bg-gray-900">
+                <div class="p-5 space-y-3">
+                    <h3 class="text-xl font-bold text-[#D4AF37] truncate">ชื่องาน/ชื่อเรื่องที่ 2</h3>
+                    <p class="text-xs text-gray-500 uppercase font-bold italic">จาก โปรดักชั่น B | ความยาว 20 นาที</p>
+                    <p class="text-sm text-gray-400 leading-relaxed line-clamp-3">เรื่องย่อโดยย่อของภาพยนตร์เรื่องที่ 2 จะแสดงตรงนี้ประมาณ 3 บรรทัด เพื่อให้การ์ดมีขนาดเท่ากัน...</p>
+                    <button class="w-full bg-[#D4AF37] text-black py-2 rounded-lg text-sm font-bold hover:bg-[#f1c40f]">ดูรายละเอียด/จองตั๋ว</button>
+                </div>
+            </div>
+            </div>
+    </main>
+
+</body>
+</html>
